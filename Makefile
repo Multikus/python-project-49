@@ -12,3 +12,12 @@ reinstall: build
 
 make lint:
 	uv run ruff check brain_games
+
+run-rec:
+	asciinema rec demo.cast
+
+play-rec:
+	asciinema play demo.cast
+
+upload-rec:
+	asciinema upload demo.cast

@@ -9,3 +9,5 @@
 out
 gen
 .env
+demo.cast
+debug.py
