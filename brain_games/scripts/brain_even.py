@@ -13,7 +13,13 @@ def even_game(name):
 
         user_response = prompt.string('Your answer: ').lower()
         check_num = check_event_or_odd(number)
-        check_result(game_score, user_response, name, check_num)
+        result = check_result(user_response, name, check_num)
+
+        if result:
+            game_score += 1
+        else:
+            game_score = 0
+
     winner_game(name)
 
 

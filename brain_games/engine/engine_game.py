@@ -19,14 +19,13 @@ def winner_game(name):
 
 
 def get_random_number():
-    number = randint(1, 50)
+    number = randint(1, 20)
     return number
 
 
 def get_random_operation():
     operation_selection = ['+', '-', '*']
     operation = choice(operation_selection)
-    print(operation)
 
     if operation == '+':
         math_operator = operator.add
@@ -46,15 +45,15 @@ def check_event_or_odd(number):
     return 'no'
 
 
-def check_result(score, user_resp, name, corr_response):
+def check_result(user_resp, name, corr_response):
 
     correct_response = corr_response
     if user_resp == correct_response:
-        score += 1
         print('Correct!')
+        return True
     else:
         wrong_game(user_resp, correct_response, name)
-        score = 0
+        return False
 
 
 def text_player_question(num1, rnd_operation, num2):

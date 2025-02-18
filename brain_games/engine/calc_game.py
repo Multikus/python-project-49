@@ -8,6 +8,5 @@ def calc():
     correct_answer = math_operator(a, b)
 
     player_question = text_player_question(a, operation, b)
-    print('correct_answer > ', correct_answer)
 
     return correct_answer, player_question
