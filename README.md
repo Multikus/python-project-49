@@ -7,3 +7,4 @@
 
 [asciinema brain-call](https://asciinema.org/a/hyCvQPJXlCRllV4KXfnCfsXus)
 
+[asciinema brain-gcd](https://asciinema.org/a/zTm8Djlqz59SQSIeYUnqCCfpA)

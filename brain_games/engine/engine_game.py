@@ -19,7 +19,7 @@ def winner_game(name):
 
 
 def get_random_number():
-    number = randint(1, 20)
+    number = randint(1, 51)
     return number
 
 
@@ -56,6 +56,11 @@ def check_result(user_resp, name, corr_response):
         return False
 
 
-def text_player_question(num1, rnd_operation, num2):
+def text_player_question_calc_game(num1, rnd_operation, num2):
     question_text = f'Question: {num1} {rnd_operation} {num2}'
+    return question_text
+
+
+def text_player_question(num1, num2):
+    question_text = f'Question: {num1} {num2}'
     return question_text
