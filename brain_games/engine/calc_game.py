@@ -2,8 +2,8 @@ from brain_games.engine.engine_game import get_random_operation, get_random_numb
 
 
 def calc():
-    a = get_random_number()
-    b = get_random_number()
+    a = get_random_number(1, 20)
+    b = get_random_number(1, 20)
     math_operator, operation = get_random_operation()
     correct_answer = math_operator(a, b)
 

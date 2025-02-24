@@ -18,8 +18,8 @@ def winner_game(name):
     print(f'Congratulations, {name}!')
 
 
-def get_random_number():
-    number = randint(1, 51)
+def get_random_number(num1, num2):
+    number = randint(num1, num2)
     return number
 
 
@@ -61,6 +61,9 @@ def text_player_question_calc_game(num1, rnd_operation, num2):
     return question_text
 
 
-def text_player_question(num1, num2):
-    question_text = f'Question: {num1} {num2}'
+def text_player_question(num1, num2=None):
+    if num2 is None:
+        question_text = f'Question: {num1}'
+    else:
+        question_text = f'Question: {num1} {num2}'
     return question_text

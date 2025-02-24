@@ -3,8 +3,8 @@ from brain_games.engine.engine_game import get_random_number, text_player_questi
 
 def gcd_game():
 
-    b = get_random_number()
-    a = get_random_number()
+    b = get_random_number(1, 51)
+    a = get_random_number(1, 51)
     min_num = min(a, b)
 
     for i in range(min_num, 0, -1):

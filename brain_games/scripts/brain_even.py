@@ -8,7 +8,7 @@ def even_game(name):
     game_score = 0
 
     while game_score < 3:
-        number = get_random_number()
+        number = get_random_number(1, 51)
         print(f'Question: {number}')
 
         user_response = prompt.string('Your answer: ').lower()
