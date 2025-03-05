@@ -3,7 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Brain_games"
 readme = "README.md"
-authors= 'Nikolai Pekarskiy'
+authors= ['Nikolai Pekarskiy']
 requires-python = ">=3.13"
 dependencies = [
     "prompt>=0.4.1",
