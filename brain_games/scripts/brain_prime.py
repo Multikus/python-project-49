@@ -20,9 +20,14 @@ def brain_prime(name):
         if result:
             game_score += 1
         else:
+            game_score = 0
             game_over = True
             break
-    winner_game(name)
+
+    if not game_over:
+        winner_game(name)
+    else:
+        return
 
 
 def main():

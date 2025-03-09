@@ -23,7 +23,11 @@ def brain_gcd(name):
             game_score = 0
             game_over = True
             break
-    winner_game(name)
+
+    if not game_over:
+        winner_game(name)
+    else:
+        return
 
 
 def main():

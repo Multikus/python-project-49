@@ -5,6 +5,7 @@ from brain_games.engine.progression_game import progression_game
 
 def brain_progression(name):
     game_score = 0
+    game_over = False
 
     while game_score < 3:
         correct_answer, text_question = progression_game()
@@ -20,7 +21,13 @@ def brain_progression(name):
             game_score += 1
         else:
             game_score = 0
-    winner_game(name)
+            game_over = True
+            break
+
+    if not game_over:
+        winner_game(name)
+    else:
+        return
 
 
 def main():
