@@ -6,7 +6,7 @@ from brain_games.engine.calc_game import calc
 
 def brain_calc(name):
     game_score = 0
-
+    game_over = False
     while game_score < 3:
         correct_answer, text_question = calc()
         print(text_question)
@@ -20,7 +20,8 @@ def brain_calc(name):
         if result:
             game_score += 1
         else:
-            game_score = 0
+            game_over = True
+            break
     winner_game(name)
 
 

@@ -5,6 +5,7 @@ from brain_games.engine.prime_game import prime_game
 
 def brain_prime(name):
     game_score = 0
+    game_over = False
 
     while game_score < 3:
         correct_answer, text_question = prime_game()
@@ -19,7 +20,8 @@ def brain_prime(name):
         if result:
             game_score += 1
         else:
-            game_score = 0
+            game_over = True
+            break
     winner_game(name)
 
 
