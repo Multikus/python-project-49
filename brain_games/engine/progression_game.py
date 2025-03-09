@@ -14,6 +14,7 @@ def progression_game():
     dott = get_random_number(0, len(rnd_list) - 1)
     rnd_list.pop(dott)
     rnd_list.insert(dott, '..')
+    rnd_list = ', '.join(map(str, rnd_list))
     player_question = text_player_question(rnd_list)
 
     return rnd_step, player_question
